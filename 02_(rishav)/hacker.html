@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>DELTA TASK 2 hacker</title>
+<meta name="description" content="Delta Inductions 2013" />
+<meta http-equiv=”X-UA-Compatible” content=”IE=EmulateIE7? />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style>
+#center
+{
+position:absolute;
+left:500px; 
+top:100px;
+}
+#button
+{
+color:blue;
+height: 50px;
+width: 70px;
+font-size:20px;
+}
+h1
+{
+color:orange;
+position:absolute;
+left:600px; 
+top:10px;
+font-family:"Times New Roman";
+font-size:20px;
+}
+h1:hover
+{
+color:green;
+font-family:"arial";
+font-size:25px;
+}
+#para1
+{ 
+color:white;
+position:absolute;
+left:20px; 
+top:10px;
+font-size:20px;
+}
+#para1:hover
+{ 
+color:red;
+}
+#para2
+{ 
+color:white;
+position:absolute;
+left:1200px; 
+top:10px;
+font-size:20px;
+}
+#para2:hover
+{ 
+color:red;
+}
+#standard:hover
+{ 
+color:red;
+}
+</style>
+<script>
+function fact()
+{
+var k=1;
+var a=cal.txt.value;
+if (a==0)
+k=1;
+else
+{
+for (var i=1;i<=a;i++)
+k=k*i;
+}
+cal.txt.value='   '+k;
+}
+function hi()
+{
+cal.txt.value ='   '+eval(cal.txt.value);
+}
+</script>
+</head>
+<body background ="Web-Page.jpg">
+<h1 id="task" align="center">DELTA TASK 2</h1>
+<h3 id="para1" style="position:absolute; left:70px; top:50px;">WEB</h3>
+<h3 id="para2" style="position:absolute; left:1200px; top:50px;">DEVELOPMENT</h3>
+<h3 id="standard" style="position:absolute; left:650px; top:250px;">NORMAL MODE</h3>
+<form name="cal"style="position:absolute; left:1px; top:210px;">
+<table border="4" bordercolor="green" id="center">
+<tr>
+<td>
+<input type="text" name="txt" size="38" style="height:50px;font-size:20pt;color:violet"  onkeypress="hi()">
+<br>
+</td>
+</tr>
+<div>
+<tr>
+<td>
+<input type="button" value="1" id="button" onclick="cal.txt.value += '1'">
+<input type="button" value="2" id="button" onclick="cal.txt.value += '2'">
+<input type="button" value="3" id="button" onclick="cal.txt.value += '3'">
+<input type="button" value="+" id="button" onclick="cal.txt.value += ' + '">
+<input type="button" value="FACT" id="button" onclick="fact()">
+<input type="button" value="EXP" id="button" onclick="cal.txt.value ='   '+Math.exp(cal.txt.value)">
+<input type="button" value="(" id="button" onclick="cal.txt.value += ' ( '">
+<br>
+<input type="button" value="4" id="button" onclick="cal.txt.value += '4'">
+<input type="button" value="5" id="button" onclick="cal.txt.value += '5'">
+<input type="button" value="6" id="button" onclick="cal.txt.value += '6'">
+<input type="button" value="-" id="button" onclick="cal.txt.value += ' - '">
+<input type="button" value="SIN" id="button" onclick="cal.txt.value ='   '+Math.sin(cal.txt.value*Math.PI/180)">
+<input type="button" value="LOG" id="button" onclick="cal.txt.value ='   '+Math.log(cal.txt.value)">
+<input type="button" value=")" id="button" onclick="cal.txt.value += ' ) '">
+<br>
+<input type="button" value="7" id="button" onclick="cal.txt.value += '7'">
+<input type="button" value="8" id="button" onclick="cal.txt.value += '8'">
+<input type="button" value="9" id="button" onclick="cal.txt.value += '9'">
+<input type="button" value="*" id="button" onclick="cal.txt.value += ' * '">
+<input type="button" value="COS" id="button" onclick="cal.txt.value ='   '+Math.cos(cal.txt.value*Math.PI/180)">
+<input type="button" value="SQ" id="button" onclick="cal.txt.value ='   '+Math.pow(cal.txt.value,2)">
+<input type="button" value="CU.RT" id="button" onclick="cal.txt.value ='   '+Math.pow(cal.txt.value,1/3)">
+<br>
+<input type="button" value="c" id="button" onclick="cal.txt.value = ''">
+<input type="button" value="0" id="button" onclick="cal.txt.value += '0'">
+<input type="button" value="=" id="button" onclick="cal.txt.value ='   '+eval(cal.txt.value)">
+<input type="button" value="/" id="button" onclick="cal.txt.value += ' / '">
+<input type="button" value="TAN" id="button" onclick="cal.txt.value ='   '+Math.tan(cal.txt.value*Math.PI/180)">
+<input type="button" value="SQ.RT" id="button" onclick="cal.txt.value ='   '+Math.pow(cal.txt.value,0.5)">
+<input type="button" value="CUBE" id="button" onclick="cal.txt.value ='   '+Math.pow(cal.txt.value,3)">
+<br>
+</td>
+</tr>
+</div>
+</table>
+</form>
+</body>
+</html>
